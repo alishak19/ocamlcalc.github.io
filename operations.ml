@@ -9,10 +9,10 @@ type exp =
 
 module SMap = Map.Make (String)
 
-let rec aux_sigma var b enviro e =
+let rec aux_sigma var a enviro e =
   let rec aux enviro acc =
     let v = SMap.find var enviro in
-    if v > b then acc
+    if v > a then acc
     else 
       let res = calculator enviro e in
       aux (SMap.add var (v + 1) enviro) (acc + res)
