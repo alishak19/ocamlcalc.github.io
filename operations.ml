@@ -7,7 +7,7 @@ type exp =
   | MULT of exp * exp
   | DIV of exp * exp
 
-module SMap = Map.Make (String)
+module Smap = Map.Make (String)
 
 let rec aux_sigma var a enviro e =
   let rec aux enviro acc =
