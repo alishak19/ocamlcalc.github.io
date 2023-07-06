@@ -15,7 +15,7 @@ let rec aux_sigma var a enviro e =
     if v > a then acc
     else 
       let res = calculator enviro e in
-      aux (SMap.add var (v + 1) enviro) (acc + res)
+      aux (Smap.add var (v + 1) enviro) (acc + res)
   in aux enviro 0
 
 and calculator enviro = function
