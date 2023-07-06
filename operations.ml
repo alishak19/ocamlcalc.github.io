@@ -11,7 +11,7 @@ module Smap = Map.Make (String)
 
 let rec aux_sigma var a enviro e =
   let rec aux enviro acc =
-    let v = SMap.find var enviro in
+    let v = Smap.find var enviro in
     if v > a then acc
     else 
       let res = calculator enviro e in
