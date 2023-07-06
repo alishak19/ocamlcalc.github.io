@@ -19,7 +19,7 @@ let rec aux_sigma var a enviro e =
   in aux enviro 0
 
 and calculator enviro = function
-  | VAR x -> SMap.find x env
+  | VAR x -> Smap.find x env
   | INT x -> x
   | SIGMA (var, e1, e2, e3) -> 
     match var with
