@@ -1,7 +1,7 @@
 type exp = 
   | VAR of string
   | INT of int
-  | SIGMA of exp * exp * exp * ex
+  | SIGMA of exp * exp * exp * e
   | ADD of exp * exp
   | SUBT of exp * exp
   | MULT of exp * exp
