@@ -25,7 +25,7 @@ and calculator enviro = function
     match var with
     | VAR x ->
       let initial = calc enviro e1 in 
-      let bound = calcula enviro e2 in
+      let bound = calcul enviro e2 in
       aux_sigma x bound (Smap.add x initial enviro) e3
     | _ -> assert false
   | ADD (e1, e2) -> calculator enviro e1 + calculator enviro e2
