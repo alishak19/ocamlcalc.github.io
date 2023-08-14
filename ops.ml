@@ -35,4 +35,4 @@ and calculator enviro = function
 
 let e1 = SIGMA (VAR "X", INT 1, INT 10, SUBT(MULT(VAR "X", VAR "X"), INT 1))
 
-let () = Printf.printf "%d\n" (calculator Smap.empty e1)
+let () = Printf.printf "%d\n " (calculator Smap.empty e1)
