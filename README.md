@@ -1,2 +1,2 @@
 # ocamlcalc.github.io
-Basic calculator written in OCaml
+Basic calculator writte in OCaml
