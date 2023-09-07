@@ -1,2 +1,2 @@
 # ocamlcalc.github.io
-Basic calculator wr in OCaml
+Basic calculator w in OCaml
