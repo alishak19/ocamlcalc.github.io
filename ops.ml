@@ -28,7 +28,7 @@ and calculator enviro = function
       let bound = calculator enviro e2 in
       aux_sigma x bound (Smap.add x initial enviro) e3 
     | _ -> assert false
-  | ADD (e1, e2) -> calculator enviro e1 + calculator enviro e2
+  | ADD (e1, e2) -> calculator enviro e1 + calculator 
   | SUBT (e1, e2) -> calculator enviro e1 - calculator enviro e2
   | MULT (e1, e2) -> calculator enviro e1 * calculator enviro e2
   | DIV (e1, e2) -> calculator enviro e1 / calculator enviro e2
